@@ -12,6 +12,7 @@ public class Config {
     public Config(String ruta) throws IOException {
         Properties p = new Properties();
         try (FileInputStream in = new FileInputStream(ruta)) {
+
             p.load(in);
         }
         cupo     = Integer.parseInt(p.getProperty("cupo", "10").trim());
