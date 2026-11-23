@@ -5,7 +5,6 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.atomic.AtomicInteger;
 
-/** 30 solicitudes TURNO simultaneas: 10 hilos por ventanilla. */
 public class PruebaCarga {
     public static void main(String[] args) throws Exception {
         Config cfg = new Config("config.properties");

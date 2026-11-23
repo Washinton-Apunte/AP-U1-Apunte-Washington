@@ -32,7 +32,7 @@ public class Bitacora {
                 mayor = Math.max(mayor, Long.parseLong(linea.split(";", 4)[0]));
             }
         } catch (IOException | NumberFormatException e) {
-            // si algo falla, seguimos con lo que se leyo
+
         }
         return mayor;
     }

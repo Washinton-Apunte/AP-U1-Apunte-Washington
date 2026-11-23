@@ -4,11 +4,11 @@ import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.net.Socket;
 
-/** Logica de cliente que usan la Ventanilla y PruebaCarga. */
+
 public class Cliente {
 
     static String[] solicitar(Config cfg, int ventanilla, Lamport reloj, Bitacora log, String tipo, String token) {
-        long t = reloj.tick();                                   // envio = evento -> tick
+        long t = reloj.tick();
         if (log != null) log.registrar(t, "ENVIA_" + tipo, "ventanilla=" + ventanilla);
         try (Socket s = new Socket()) {
             s.connect(new InetSocketAddress(cfg.host, cfg.puerto), cfg.timeoutMs);

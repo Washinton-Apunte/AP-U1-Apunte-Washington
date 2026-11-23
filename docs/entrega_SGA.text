@@ -1,3 +1,14 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{url}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+
+\begin{document}
+\begin{center}
+{\Large\bfseries UNIVERSIDAD TÉCNICA ESTATAL DE QUEVEDO}\\[4pt]
+Facultad de Ciencias de la Computación y Diseño Digital --- Carrera de Software\\[18pt]
 {\large Aplicaciones Distribuidas (ISR-701)}\\[4pt]
 {\large Aporte práctico de la Unidad I --- TurnoJusto}
 \end{center}
@@ -12,5 +23,8 @@
 
 \vspace{1.2cm}
 \textbf{Repositorio:}\\[6pt]
+
+
+
 
 \end{document}

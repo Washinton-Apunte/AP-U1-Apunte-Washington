@@ -5,7 +5,6 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
-/** Une los cuatro registros y ordena por (lamport, id_proceso). */
 public class OrdenTotal {
     public static void main(String[] args) throws IOException {
         List<String[]> eventos = new ArrayList<>();

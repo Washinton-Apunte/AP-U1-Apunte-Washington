@@ -1,6 +1,7 @@
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
+
 public class Config {
     public final int cupo;
     public final String token;
@@ -9,10 +10,10 @@ public class Config {
     public final int latidoMs;
     public final int caidaMs;
     public final int timeoutMs;
+
     public Config(String ruta) throws IOException {
         Properties p = new Properties();
         try (FileInputStream in = new FileInputStream(ruta)) {
-
             p.load(in);
         }
         cupo     = Integer.parseInt(p.getProperty("cupo", "10").trim());
