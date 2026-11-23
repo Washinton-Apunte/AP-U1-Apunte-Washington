@@ -17,7 +17,7 @@ public class Cliente {
             DataInputStream in = new DataInputStream(s.getInputStream());
             Trama.escribir(out, tipo + "|" + token + "|" + ventanilla + "|" + t);
             String[] r = Trama.leer(in).split("\\|", -1);
-            long t2 = reloj.recibir(Long.parseLong(r[8]));       // recepcion -> max + 1
+            long t2 = reloj.recibir(Long.parseLong(r[8]));
             if (log != null) log.registrar(t2, "RECIBE_RESPUESTA",
                     tipo + " resultado=" + r[1] + " numero=" + r[3] + " " + r[2]);
             return r;
